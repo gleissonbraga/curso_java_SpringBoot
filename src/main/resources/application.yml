@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: curso_arquitetura_springboot
+  jpa:
+    show-sql: true
+  main:
+    lazy-initialization: false
+
+app:
+  config:
+    variavel: testando minha variavel
+    valor: 500
+
+
+# buscando a variavel de ambiente no yml
+
+# EXEMPLO 01
+#  @Value("${app.config.variavel}")
+#    private String variavel;
+

@@ -6,6 +6,7 @@ import com.springboot.curso_arquitetura_springboot.montadora.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 
 
 // configurando o BEAN
@@ -14,6 +15,7 @@ public class MontadoraConfiguration {
 
     @Primary // DEIXA ESTE BEAN COMO PADRÃO
     @Bean(name = "motorAspirado")
+    @Scope("singleton")
     public Motor motorAspirado(){
         var motor = new Motor();
         motor.setCavalos(120);
